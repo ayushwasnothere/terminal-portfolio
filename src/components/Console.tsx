@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, type JSX } from "react";
 import { useTheme } from "../theme/useTheme";
 import { getThemeColors } from "../theme/utils";
 import useFont from "../font/useFont";

@@ -7,12 +7,10 @@ export const themes = {
     error: "#ff5555",
     highlight: "#ff79c6",
     secondary: "#6272a4",
-
-    // new additions
     muted: "#6d7085",
     heading: "#f1fa8c",
     subtext: "#8be9fd",
-    contrast: "#ffb86c", // bright orange, pops against dark purple
+    contrast: "#ffb86c",
   },
   tokyonight: {
     bg: "#1a1b26",
@@ -22,12 +20,10 @@ export const themes = {
     error: "#f7768e",
     highlight: "#bb9af7",
     secondary: "#3b4261",
-
-    // new additions
     muted: "#565f89",
     heading: "#7dcfff",
     subtext: "#9aa5ce",
-    contrast: "#ff9e64", // warm orange, eye-catching on dark-blue bg
+    contrast: "#ff9e64",
   },
   catppuccin: {
     bg: "#1e1e2e",
@@ -37,12 +33,10 @@ export const themes = {
     error: "#f38ba8",
     highlight: "#f5bde6",
     secondary: "#6c7086",
-
-    // new additions
     muted: "#9399b2",
     heading: "#fab387",
     subtext: "#b4befe",
-    contrast: "#f9e2af", // soft golden yellow, stands out on dark purple
+    contrast: "#f9e2af",
   },
 } as const;
 

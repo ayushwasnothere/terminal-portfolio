@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import About from "./outputs/About";
 import Font from "./outputs/Font";
 import Goals from "./outputs/Goals";
