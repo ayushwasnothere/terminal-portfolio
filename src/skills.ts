@@ -1,0 +1,55 @@
+export const skills = [
+  {
+    name: "Languages (in order of proficiency)",
+    items: [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "Java",
+      "C/C++",
+      "Rust",
+      "Bash",
+      "Lua",
+    ],
+  },
+  {
+    name: "Frameworks/Libraries",
+    items: [
+      "React",
+      "Next.js",
+      "Express",
+      "Hono",
+      "Prisma",
+      "Socket.IO",
+      "Tailwind CSS",
+      "WS.js",
+      "Flutter",
+      "Flask",
+      "Python Telegram Bot",
+      "Telethon",
+    ],
+  },
+  {
+    name: "Blockchain",
+    items: ["Solana", "Etherium", "Anchor(learning)"],
+  },
+  {
+    name: "Tools",
+    items: ["Docker", "Git", "Redis", "PostgreSQL", "MySQL", "MongoDB"],
+  },
+  {
+    name: "DevOps",
+    items: [
+      "Nginx",
+      "AWS EC2",
+      "AWS ECS",
+      "AWS Lambda",
+      "AWS S3",
+      "AWS Elastic Cache",
+      "AWS CloudWatch",
+      "Cloudflare Workers",
+      "Cloudflare R2",
+      "Docker-CLI",
+    ],
+  },
+];

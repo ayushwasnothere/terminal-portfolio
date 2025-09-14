@@ -9,7 +9,7 @@ type TerminalSettings = {
 const ThemeContext = createContext<TerminalSettings | null>(null);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<ThemeName>("catppuccin");
+  const [theme, setTheme] = useState<ThemeName>("tokyonight");
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

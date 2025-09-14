@@ -5,3 +5,6 @@ export const fonts = {
 } as const;
 
 export type FontName = keyof typeof fonts;
+export function isFontName(value: string): value is FontName {
+  return value in fonts;
+}

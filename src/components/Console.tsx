@@ -30,7 +30,7 @@ export default function Console() {
               <Prompt />
               <span style={{ color: colors.success }}>{item.command}</span>
             </div>
-            <div className="w-full ml-4" style={{ color: colors.fg }}>
+            <div className="w-full px-2 md:px-4" style={{ color: colors.fg }}>
               {item.output}
             </div>
           </div>
@@ -73,7 +73,13 @@ const Command = ({
 
   useEffect(() => {
     const handleKeyDown = () => {
-      inputRef.current?.focus();
+      const inputEl = inputRef.current;
+      if (inputEl) {
+        inputEl.focus();
+
+        const length = inputEl.value.length;
+        inputEl.setSelectionRange(length, length);
+      }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => {
