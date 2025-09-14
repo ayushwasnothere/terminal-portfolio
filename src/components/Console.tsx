@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, type JSX } from "react";
+import React, { useEffect, useState, type JSX } from "react";
 import { useTheme } from "../theme/useTheme";
 import { getThemeColors } from "../theme/utils";
 import useFont from "../font/useFont";
@@ -12,14 +12,18 @@ interface CommandType {
   failed?: boolean;
 }
 
-export default function Console() {
+export default function Console({
+  inputRef,
+}: {
+  inputRef?: React.RefObject<HTMLInputElement | null>;
+}) {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
   const [commands, setCommands] = useState<CommandType[]>([]);
   const { font } = useFont();
   return (
     <div
-      className="max-w-[768px] w-full mt-10 flex flex-col flex-wrap text-base overflow-x-hidden"
+      className="max-w-[768px] px-1 w-full mt-10 flex flex-col flex-wrap text-base overflow-x-hidden"
       style={{ fontFamily: fonts[font] }}
     >
       <Header />
@@ -36,9 +40,25 @@ export default function Console() {
           </div>
         );
       })}
-      <div className="w-full flex items-center gap-2">
+      <div
+        className="w-full flex items-center gap-2"
+        onClick={() => {
+          if (inputRef === null) return;
+          const inputEl = inputRef?.current;
+          if (inputEl) {
+            inputEl.focus();
+
+            const length = inputEl.value.length;
+            inputEl.setSelectionRange(length, length);
+          }
+        }}
+      >
         <Prompt />
-        <Command setCommands={setCommands} commands={commands} />
+        <Command
+          setCommands={setCommands}
+          commands={commands}
+          inputRef={inputRef}
+        />
       </div>
     </div>
   );
@@ -60,20 +80,21 @@ const Prompt = () => {
 const Command = ({
   commands,
   setCommands,
+  inputRef,
 }: {
   commands: CommandType[];
   setCommands: React.Dispatch<React.SetStateAction<CommandType[]>>;
+  inputRef?: React.RefObject<HTMLInputElement | null>;
 }) => {
   const [currentCommand, setCurrentCommand] = useState("");
   const [history, setHistory] = useState<string[]>([]);
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
-  const inputRef = useRef<HTMLInputElement>(null);
   const [arrowUpCount, setArrowUpCount] = useState(0);
 
   useEffect(() => {
     const handleKeyDown = () => {
-      const inputEl = inputRef.current;
+      const inputEl = inputRef?.current;
       if (inputEl) {
         inputEl.focus();
 
