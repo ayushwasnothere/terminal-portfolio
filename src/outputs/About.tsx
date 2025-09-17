@@ -11,7 +11,7 @@ const About = () => {
         <img
           src="/pic.jpg"
           alt="Twitter Pic"
-          className="w-32 h-32 rounded-full border-2 border-accent"
+          className="w-32 h-32 rounded-full"
         />
         <div className="flex-1">
           Hey there! Welcome to my terminal portfolio.
