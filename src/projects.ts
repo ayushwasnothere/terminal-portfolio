@@ -27,6 +27,23 @@ const projects: Project[] = [
     liveLink: "https://raven.citxruzz.tech",
   },
   {
+    name: "TempMail",
+    desc: "TempMail is a modern disposable email service powered by a fast, self-built SMTP server written in Rust. It enables users to generate temporary inboxes and receive auto-expiring emails in real time, built with Bun, Express, and PostgreSQL for performance and simplicity.",
+    repoLink: "https://github.com/ayushwasnothere/temp-mail",
+    stack: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "ExpressJS",
+      "Bun",
+      "PostgreSQL",
+      "Nginx",
+      "rust-smtp",
+    ],
+    liveLink: "https://tmail.citxruzz.tech",
+  },
+
+  {
     name: "ts-chess",
     desc: "TS-Chess is a full-fledged chess implementation for the web, built with TypeScript and React",
     repoLink: "https://github.com/ayushwasnothere/ts-chess.git",
@@ -46,6 +63,19 @@ const projects: Project[] = [
     desc: "Pwmgr is a lightweight, privacy-first Bitwarden clone built as a Chrome extension. It lets you manage, save, and generate passwords with full security and local privacy.",
     repoLink: "https://github.com/ayushwasnothere/pwmgr.git",
     stack: ["React", "TypeScript", "TailwindCSS", "Nodejs"],
+  },
+  {
+    name: "rust-smtp",
+    desc: "A high-performance SMTP mail server built in Rust for speed, reliability, and security. It powers my TempMail service, handling incoming mail parsing and delivery with minimal latency and efficient resource usage.",
+    repoLink: "https://github.com/ayushwasnothere/rust-smtp",
+    stack: [
+      "Rust",
+      "Tokio",
+      "SMTP Protocol",
+      "MIME Parsing",
+      "PostgreSQL",
+      "Docker",
+    ],
   },
   {
     name: "telegram-session",

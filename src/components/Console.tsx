@@ -109,7 +109,7 @@ const Command = ({
   }, []);
 
   useEffect(() => {
-    window.scrollTo({ top: document.body.scrollHeight });
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   }, [commands]);
 
   return (
