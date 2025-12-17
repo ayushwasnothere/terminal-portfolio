@@ -8,6 +8,7 @@ export const skills = [
       "Java",
       "C/C++",
       "Rust",
+      "Go",
       "Bash",
       "Lua",
     ],

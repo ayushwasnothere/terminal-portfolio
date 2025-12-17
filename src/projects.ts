@@ -42,6 +42,20 @@ const projects: Project[] = [
     ],
     liveLink: "https://tmail.citxruzz.tech",
   },
+  {
+    name: "shrty",
+    desc: "shrty is a high-performance link shortening service built for speed and simplicity. It features a robust Go backend and a responsive React frontend to transform long URLs into clean, shareable links instantly, secured with Cloudflare Turnstile for abuse prevention.",
+    repoLink: "https://github.com/ayushwasnothere/shrty",
+    stack: [
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "Go",
+      "PostgreSQL",
+      "Cloudflare Turnstile",
+    ],
+    liveLink: "https://shrty.citxruzz.tech",
+  },
 
   {
     name: "ts-chess",
