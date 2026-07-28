@@ -7,44 +7,53 @@ const About = () => {
 
   return (
     <div className="mx-auto px-4 space-y-3 mt-5 font-mono text-sm">
-      <div className="flex flex-wrap items-end space-x-3">
+      <div className="flex flex-wrap items-end space-x-4">
         <img
           src="/pic.jpg"
-          alt="Twitter Pic"
-          className="w-32 h-32 rounded-full"
+          alt="Ayush Shah"
+          className="w-32 h-32 rounded-full border-2"
+          style={{ borderColor: colors.highlight }}
         />
         <div className="flex-1">
           Hey there! Welcome to my terminal portfolio.
           <br />
           <br />
-          I'm <span style={{ color: colors.highlight }}>Ayush Shah</span>, 18
-          years old, currently pursuing{" "}
-          <span style={{ color: colors.highlight }}>Computer Science</span>.
+          I'm <span style={{ color: colors.highlight }}>Ayush Shah</span>, a software engineer based in{" "}
+          <span style={{ color: colors.highlight }}>Hyderabad, India</span>.
           <br />
         </div>
       </div>
-      <div style={{ color: colors.fg, lineHeight: 1.4 }}>
-        <br />I live and breathe in the terminal — a true{" "}
+      <div style={{ color: colors.fg, lineHeight: 1.5 }}>
+        <br />
+        Currently building at <span style={{ color: colors.highlight }}>Roboparadigm</span>, where I engineer deep-tech software, robotics tools, and intelligent systems.
+        <br />
+        <br />I live and breathe in the terminal — a passionate{" "}
         <span style={{ color: colors.highlight }}>Linux enthusiast</span> and a
-        proud <span style={{ color: colors.highlight }}>nvim fan</span>. My
-        setup is minimal, my workflow is fast, and my curiosity never stops.
+        proud <span style={{ color: colors.highlight }}>Neovim user</span>. My
+        setup is keyboard-driven, my workflow is fast, and my curiosity is relentless.
         <br />
         <br />
-        I'm passionate about{" "}
+        I specialize in{" "}
         <span style={{ color: colors.highlight }}>
-          Fullstack Web Development
+          AI Agents, High-Performance Backends (Rust, Go, C++), Robotics (ROS 2), and Fullstack Systems
         </span>{" "}
-        and absolutely love{" "}
-        <span style={{ color: colors.highlight }}>building new projects</span> —
-        always exploring and creating.
+        — always building tools that solve real problems.
         <br />
         <br />
-        Currently, I'm diving into the world of{" "}
-        <span style={{ color: colors.highlight }}>Solana Web3</span> development
-        — combining blockchain and creativity.
+        Read my technical notes & blog at{" "}
+        <a
+          href="https://citxruzz.tech"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: colors.highlight, textDecoration: "underline" }}
+        >
+          citxruzz.tech
+        </a>{" "}
+        or type <span style={{ color: colors.highlight }}>projects</span> to explore what I've built!
       </div>
     </div>
   );
 };
 
 export default About;
+

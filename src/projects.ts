@@ -8,9 +8,35 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    name: "Forge",
+    desc: "Forge is an AI coding agent that lives in your terminal — assisting with autonomous code generation, multi-file refactoring, execution of shell commands, and interactive pair programming directly from CLI.",
+    repoLink: "https://github.com/ayushwasnothere/forge",
+    stack: [
+      "TypeScript",
+      "Nodejs",
+      "AI Agents",
+      "LLMs",
+      "CLI",
+      "TailwindCSS",
+    ],
+    liveLink: "https://forge.citxruzz.tech",
+  },
+  {
+    name: "7DOF MTC Arm Control",
+    desc: "A ROS 2 MoveIt Task Constructor (MTC) package for 7-degree-of-freedom robotic arms, featuring complex motion planning, collision avoidance, and automated pick-and-place task pipelines.",
+    repoLink: "https://github.com/ayushwasnothere/7dof_mtc",
+    stack: ["C++", "ROS 2", "MoveIt", "Robotics", "Docker"],
+  },
+  {
+    name: "Cloud-It",
+    desc: "A TypeScript cloud deployment utility and automation framework for managing cloud infrastructure workloads and serverless deployments.",
+    repoLink: "https://github.com/ayushwasnothere/cloud-it",
+    stack: ["TypeScript", "Nodejs", "AWS", "Docker", "DevOps"],
+  },
+  {
     name: "Raven",
-    desc: "Raven is a full-featured, real-time web chat application built with Next.js and TypeScript, combining WebSockets and REST APIs for speed, efficiency, and reliability.",
-    repoLink: "https://github.com/ayushwasnothere/chat-app.git",
+    desc: "Raven is a full-featured, real-time web chat application combining WebSockets and REST APIs for speed, efficiency, and rock-solid reliability.",
+    repoLink: "https://github.com/ayushwasnothere/chat-app",
     stack: [
       "React",
       "TypeScript",
@@ -27,8 +53,14 @@ const projects: Project[] = [
     liveLink: "https://raven.citxruzz.tech",
   },
   {
+    name: "rust-smtp",
+    desc: "A high-performance asynchronous SMTP mail server built in Rust with Tokio for speed, reliability, and low resource overhead. Handles incoming MIME mail parsing and storage with PostgreSQL.",
+    repoLink: "https://github.com/ayushwasnothere/rust-smtp",
+    stack: ["Rust", "Tokio", "PostgreSQL", "Docker"],
+  },
+  {
     name: "TempMail",
-    desc: "TempMail is a modern disposable email service powered by a fast, self-built SMTP server written in Rust. It enables users to generate temporary inboxes and receive auto-expiring emails in real time, built with Bun, Express, and PostgreSQL for performance and simplicity.",
+    desc: "TempMail is a modern disposable email service powered by a fast, custom SMTP server written in Rust. Generate temporary inboxes and receive auto-expiring emails in real time.",
     repoLink: "https://github.com/ayushwasnothere/temp-mail",
     stack: [
       "React",
@@ -38,13 +70,13 @@ const projects: Project[] = [
       "Bun",
       "PostgreSQL",
       "Nginx",
-      "rust-smtp",
+      "Rust",
     ],
     liveLink: "https://tmail.citxruzz.tech",
   },
   {
     name: "shrty",
-    desc: "shrty is a high-performance link shortening service built for speed and simplicity. It features a robust Go backend and a responsive React frontend to transform long URLs into clean, shareable links instantly, secured with Cloudflare Turnstile for abuse prevention.",
+    desc: "shrty is a high-performance link shortening service built for speed and simplicity, with a robust Go backend and responsive React frontend secured with Cloudflare Turnstile.",
     repoLink: "https://github.com/ayushwasnothere/shrty",
     stack: [
       "React",
@@ -56,64 +88,28 @@ const projects: Project[] = [
     ],
     liveLink: "https://shrty.citxruzz.tech",
   },
-
   {
     name: "ts-chess",
-    desc: "TS-Chess is a full-fledged chess implementation for the web, built with TypeScript and React",
-    repoLink: "https://github.com/ayushwasnothere/ts-chess.git",
+    desc: "TS-Chess is a full-fledged chess implementation for the web, built with TypeScript and React with multiplayer WebSocket support and Stockfish engine integration.",
+    repoLink: "https://github.com/ayushwasnothere/ts-chess",
     stack: [
       "React",
       "TypeScript",
       "TailwindCSS",
       "Nodejs",
       "WebSockets",
-      "Chessjs",
-      "Stockfishjs",
     ],
     liveLink: "https://chess.citxruzz.tech",
   },
   {
     name: "pwmgr",
-    desc: "Pwmgr is a lightweight, privacy-first Bitwarden clone built as a Chrome extension. It lets you manage, save, and generate passwords with full security and local privacy.",
-    repoLink: "https://github.com/ayushwasnothere/pwmgr.git",
+    desc: "Pwmgr is a lightweight, privacy-first Bitwarden clone built as a Chrome extension for generating and managing secure credentials locally.",
+    repoLink: "https://github.com/ayushwasnothere/pwmgr",
     stack: ["React", "TypeScript", "TailwindCSS", "Nodejs"],
-  },
-  {
-    name: "rust-smtp",
-    desc: "A high-performance SMTP mail server built in Rust for speed, reliability, and security. It powers my TempMail service, handling incoming mail parsing and delivery with minimal latency and efficient resource usage.",
-    repoLink: "https://github.com/ayushwasnothere/rust-smtp",
-    stack: [
-      "Rust",
-      "Tokio",
-      "SMTP Protocol",
-      "MIME Parsing",
-      "PostgreSQL",
-      "Docker",
-    ],
-  },
-  {
-    name: "telegram-session",
-    desc: "A Telegram bot to generate session strings for Telethon and Pyrogram, using an interactive chat interface with buttons. Useful for developers who want to authenticate Telegram accounts for bots or automation scripts.",
-    repoLink: "https://github.com/ayushwasnothere/telegram-session.git",
-    stack: ["Python", "python-telegram-bot", "Pyrogram", "Telethon"],
-    liveLink: "https://t.me/citxruzz_SessionBot",
-  },
-  {
-    name: "QuillWeave",
-    desc: "QuillWeave is a modern, lightweight Medium clone — a blogging platform built for writers and readers. It lets you create, publish, and read blogs with a clean and responsive interface.",
-    repoLink: "https://github.com/ayushwasnothere/medium.git",
-    stack: [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "Nodejs",
-      "Hono",
-      "Prisma",
-      "PostgreSQL",
-      "Cloudflare Workers",
-    ],
-    liveLink: "https://quillweave.citxruzz.tech",
   },
 ];
 
 export default projects;
+
+
+

@@ -5,14 +5,18 @@ export default function Goals() {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
   return (
-    <div>
-      <p style={{ color: colors.highlight }}>My goals are:</p>
-      <ul className="list-disc pl-5 flex flex-col flex-wrap">
-        <li>To become a better developer.</li>
-        <li>To contribute to open source.</li>
-        <li>To learn new technologies.</li>
-        <li>To help others in their coding journey.</li>
+    <div style={{ color: colors.fg }}>
+      <p style={{ color: colors.highlight, marginBottom: "0.5rem" }}>
+        <strong>Current Engineering Goals & Aspirations:</strong>
+      </p>
+      <ul className="list-disc pl-5 flex flex-col space-y-1">
+        <li>Build intelligent, autonomous CLI & terminal-native AI coding agents (Forge).</li>
+        <li>Architect high-performance robotics software & ROS 2 motion planning packages.</li>
+        <li>Master low-level systems programming in Rust and Go.</li>
+        <li>Contribute impactful open-source tools to the developer ecosystem.</li>
+        <li>Share technical insights, tutorials, and deep dives on my blog (citxruzz.tech).</li>
       </ul>
     </div>
   );
 }
+
