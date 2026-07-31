@@ -11,15 +11,8 @@ const projects: Project[] = [
     name: "Forge",
     desc: "Forge is an AI coding agent that lives in your terminal — assisting with autonomous code generation, multi-file refactoring, execution of shell commands, and interactive pair programming directly from CLI.",
     repoLink: "https://github.com/ayushwasnothere/forge",
-    stack: [
-      "TypeScript",
-      "Nodejs",
-      "AI Agents",
-      "LLMs",
-      "CLI",
-      "TailwindCSS",
-    ],
-    liveLink: "https://forge.citxruzz.tech",
+    stack: ["TypeScript", "Nodejs", "AI Agents", "LLMs", "CLI", "TailwindCSS"],
+    liveLink: "https://forge.cytrus.me",
   },
   {
     name: "7DOF MTC Arm Control",
@@ -50,7 +43,7 @@ const projects: Project[] = [
       "PostgreSQL",
       "Redis",
     ],
-    liveLink: "https://raven.citxruzz.tech",
+    liveLink: "https://raven.cytrus.me",
   },
   {
     name: "rust-smtp",
@@ -72,7 +65,7 @@ const projects: Project[] = [
       "Nginx",
       "Rust",
     ],
-    liveLink: "https://tmail.citxruzz.tech",
+    liveLink: "https://tmail.cytrus.me",
   },
   {
     name: "shrty",
@@ -86,20 +79,14 @@ const projects: Project[] = [
       "PostgreSQL",
       "Cloudflare Turnstile",
     ],
-    liveLink: "https://shrty.citxruzz.tech",
+    liveLink: "https://shrty.cytrus.me",
   },
   {
     name: "ts-chess",
     desc: "TS-Chess is a full-fledged chess implementation for the web, built with TypeScript and React with multiplayer WebSocket support and Stockfish engine integration.",
     repoLink: "https://github.com/ayushwasnothere/ts-chess",
-    stack: [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "Nodejs",
-      "WebSockets",
-    ],
-    liveLink: "https://chess.citxruzz.tech",
+    stack: ["React", "TypeScript", "TailwindCSS", "Nodejs", "WebSockets"],
+    liveLink: "https://chess.cytrus.me",
   },
   {
     name: "pwmgr",
@@ -110,6 +97,3 @@ const projects: Project[] = [
 ];
 
 export default projects;
-
-
-

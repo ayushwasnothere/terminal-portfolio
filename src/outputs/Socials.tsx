@@ -54,8 +54,8 @@ export default function Socials() {
     },
     {
       name: "Blog / Site",
-      link: "https://citxruzz.tech",
-      user: "citxruzz.tech",
+      link: "https://cytrus.me",
+      user: "cytrus.me",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -163,4 +163,3 @@ export default function Socials() {
     </div>
   );
 }
-

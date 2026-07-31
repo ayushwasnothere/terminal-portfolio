@@ -42,12 +42,12 @@ const About = () => {
         <br />
         Read my technical notes & blog at{" "}
         <a
-          href="https://citxruzz.tech"
+          href="https://cytrus.me"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: colors.highlight, textDecoration: "underline" }}
         >
-          citxruzz.tech
+          cytrus.me
         </a>{" "}
         or type <span style={{ color: colors.highlight }}>projects</span> to explore what I've built!
       </div>
