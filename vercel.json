@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/:code([A-Za-z0-9]+)",
-      "destination": "https://api.shrty.citxruzz.tech/:code"
+      "destination": "https://api.shrty.cytrus.me/:code"
     }
   ]
 }
